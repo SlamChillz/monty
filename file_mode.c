@@ -24,6 +24,7 @@ void file_mode(char *filename, stack_t **h)
 	{
 		while (fgets(line, sizeof(line), fptr) != NULL)
 		{
+			++*ltr;
 			if (line[strlen(line) - 1] == '\n')
 				line[strlen(line) - 1] = '\0';
 			t_input = line;
